@@ -1,0 +1,24 @@
+.logos {
+  padding: 60px 0;
+}
+.logos-container {
+  display: flex;
+  justify-content: space-around;
+  height: 44px;
+}
+
+@media (max-width: 768px) {
+  .logos {
+    padding: 2rem;
+  }
+  .logos-container {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-bottom: 10px;
+    }
+    
+  }
+}

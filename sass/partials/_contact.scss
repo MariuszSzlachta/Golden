@@ -1,0 +1,35 @@
+.contact {
+  background-color: #222;
+  background-image: url(/images/contact-background.png);
+  background-repeat: no-repeat;
+  background-position: 1100px;
+  .section-heading {
+    color: $white;
+  }
+  .section-description {
+    color: $lightGray;
+  }
+  form {
+    margin-top: 7.6rem;
+  }
+  input,
+  textarea {
+    margin-bottom: 2.8rem;
+    display: block;
+    width: 100%;
+    border: 1px solid $lightGray;
+    border-radius: 6px;
+    padding: 2rem;
+    color: $gray;
+  }
+  input {
+    height: 50px;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    margin: 0;
+  }
+}

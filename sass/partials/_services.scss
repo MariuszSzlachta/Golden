@@ -1,0 +1,53 @@
+.card {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  cursor: pointer;
+  .icon-container {
+    transition: transform 0.3s ease-in-out;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    border: 6px solid $primary;
+    border-radius: 50%;
+  }
+  &:hover .icon-container {
+    transform: scale(1.2);
+  }
+}
+
+.card-icon {
+  font-size: 4rem;
+  color: $primary;
+}
+
+.card-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 25px 0 0;
+}
+
+.card-description {
+  font-family: $fontSecondary;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: normal;
+  color: $lightGray;
+}
+
+@media (max-width: 991px) {
+  .card {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-top: 0;
+  }
+}
