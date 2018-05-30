@@ -1,5 +1,4 @@
-.animation-fade-top {
-  animation-name: fade-top;
+.animation-fade{
   animation-duration: 1s;
   animation-direction: normal;
   animation-delay: 1s;
@@ -7,6 +6,9 @@
   animation-fill-mode: forwards;
   animation-play-state: initial;
   animation-timing-function: ease-in-out;
+}
+.fade-top {
+  animation-name: fade-top;
 }
 
 @keyframes fade-top {
@@ -21,20 +23,8 @@
 }
 
 //---------------------------------------
-.ready-fade-botom {
-  transform: translateY(150px);
-  opacity: 0;
-}
-
-.animation-fade-bottom {
+.fade-bottom {
   animation-name: fade-bottom;
-  animation-duration: 1s;
-  animation-direction: normal;
-  animation-delay: 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-play-state: initial;
-  animation-timing-function: ease-in-out;
 }
 
 @keyframes fade-bottom {
@@ -59,25 +49,25 @@
   animation-play-state: initial;
   animation-timing-function: ease-in-out;
 }
-.animation-slide-left_top {
+.slide-left_top {
   animation-name: slide-left_top;
 }
-.animation-slide-top {
+.slide-top {
   animation-name: slide-top;
 }
-.animation-slide-right_top {
+.slide-right_top {
   animation-name: slide-right_top;
 }
 
-.animation-slide-left-bottom {
+.slide-left-bottom {
   animation-name: slide-left_bottom;
 }
 
-.animation-slide-bottom {
+.slide-bottom {
   animation-name: slide-bottom;
 }
 
-.animation-slide-right_bottom {
+.slide-right_bottom {
   animation-name: slide-right-bottom;
 }
 

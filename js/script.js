@@ -10,11 +10,12 @@ $hamburger.on('click', function(){
 
 // menu po zaladowaniu strony
 $(document).ready(function(){
-  $menu.toggleClass('animation-fade-top');
+  $menu.toggleClass('animation-fade fade-top');
 })
 
 // services
 var $servicesCards = $('.services-cards');
 
-inView('.services-cards').on('enter', $servicesCards.addClass('animation-fade-bottom'));
+inView('.services-cards').on('enter', $servicesCards.addClass('animation-fade fade-bottom'));
 
+// portfolio
