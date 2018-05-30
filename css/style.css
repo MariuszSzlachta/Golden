@@ -513,6 +513,12 @@ section {
   left: 0;
   right: 0;
   z-index: 20;
+  transition: background-color 0.7s linear, box-shadow 0.3s linear;
+}
+
+.nav.dark {
+  background-color: #222;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-container {
@@ -544,13 +550,14 @@ section {
 }
 
 .main-nav a {
+  display: inline-block;
   text-decoration: none;
   color: #fff;
-  transition: text-decoration 0.7s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .main-nav a:hover {
-  text-decoration: underline;
+  transform: scale(1.5);
 }
 
 .brand {
@@ -575,6 +582,8 @@ section {
 @media (max-width: 768px) {
   .nav {
     background-color: #222;
+    position: fixed;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.3);
   }
   .navbar-container {
     -ms-flex-direction: column;
@@ -620,7 +629,7 @@ section {
 }
 
 .jumbotron {
-  background: #2a2a2e url(/images/jumbotron.jpg);
+  background: #2a2a2e url(../images/jumbotron.jpg);
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -773,6 +782,7 @@ section {
   text-align: center;
   font-weight: normal;
   color: #737373;
+  width: 100%;
 }
 
 @media (max-width: 991px) {
@@ -1068,7 +1078,7 @@ section {
 
 .contact {
   background-color: #222;
-  background-image: url(/images/contact-background.png);
+  background-image: url(../images/contact-background.png);
   background-repeat: no-repeat;
   background-position: 1100px;
 }

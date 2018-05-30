@@ -9,17 +9,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <link rel="stylesheet" href="vendor/normalize.css">
+  <link rel="stylesheet" href="vendor/animate.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Project One</title>
 </head>
 
 <body>
-  <nav class="nav">
+  <nav class="nav wow slideInDown">
     <div class="container navbar-container">
       <div>
         <img class="brand" src="images/brand.png" alt="Brand name">
       </div>
-      <ul class="main-nav">
+      <ul class="main-nav wow">
         <li>
           <a href="#home">home</a>
         </li>
@@ -36,15 +37,17 @@
           <a href="#contact">contact</a>
         </li>
       </ul>
-      <button class="hamburger"><span class="fas fa-bars"></span></button>
+      <button class="hamburger">
+        <span class="fas fa-bars"></span>
+      </button>
     </div>
   </nav>
   <!-- HEADER -->
   <header id="home" class="jumbotron">
     <div class="container">
-      <h1 class="heading">welcome to out studio!</h1>
-      <span class="sub-heading">it's nice to meet you</span>
-      <a href="#" class="btn btn-primary">tell me more</a>
+      <h1 class="heading wow rubberBand">welcome to out studio!</h1>
+      <span class="sub-heading wow jackInTheBox" data-wow-delay="600ms">it's nice to meet you</span>
+      <a href="#" class="btn btn-primary wow pulse" data-wow-delay="1.8s">tell me more</a>
     </div>
   </header>
 
@@ -53,36 +56,34 @@
       <h2 class="section-heading">services</h2>
       <p class="section-description">Lorem ipsum dolor sit amet consectetur.</p>
       <div class="row services-cards">
+
         <div class="col-lg-4 col-sm-12">
-          <div class="card">
+          <div class="card wow bounceInLeft" data-wow-delay="600ms">
             <div class="icon-container">
               <span class="card-icon fa fa-shopping-basket"></span>
             </div>
             <h3 class="card-heading">E-Commerce</h3>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe laborum? Facere ipsam animi nesciunt eius
-              iure distinctio.</p>
+            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe laborum? Facere ipsam animi nesciunt eius iure distinctio.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-sm-12">
-          <div class="card">
+          <div class="card wow bounceInLeft" data-wow-delay="300ms">
             <div class="icon-container">
               <span class="card-icon fa fa-laptop"></span>
             </div>
             <h3 class="card-heading">Responsive Web</h3>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe laborum? Facere ipsam animi nesciunt eius
-              iure distinctio.</p>
+            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe laborum? Facere ipsam animi nesciunt eius iure distinctio.</p>
           </div>
         </div>
 
         <div class="col-lg-4 col-sm-12">
-          <div class="card">
+          <div class="card wow bounceInLeft">
             <div class="icon-container">
               <span class="card-icon fa fa-lock"></span>
             </div>
             <h3 class="card-heading">Web Security</h3>
-            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe laborum? Facere ipsam animi nesciunt eius
-              iure distinctio.</p>
+            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, saepe laborum? Facere ipsam animi nesciunt eius iure distinctio.</p>
           </div>
         </div>
       </div>
@@ -93,8 +94,8 @@
     <div class="container">
       <h2 class="section-heading">our portfolio</h2>
       <p class="section-description">Lorem ipsum dolor sit amet consectetur.</p>
-      <div class="row portfolio-row">
-        <div class="col-lg-4 col-sm-12 portfolio-card">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 wow fadeInLeft">
           <div class="card">
             <div class="image-container">
               <img src="images/port_1.jpg" alt="portfolio 1">
@@ -104,7 +105,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-12 portfolio-card">
+        <div class="col-lg-4 col-sm-12 wow fadeInDown">
           <div class="card">
             <div class="image-container">
               <img src="images/port_2.jpg" alt="portfolio 2">
@@ -114,7 +115,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-12 portfolio-card">
+        <div class="col-lg-4 col-sm-12 wow fadeInRight">
           <div class="card">
             <div class="image-container">
               <img src="images/port_3.jpg" alt="portfolio 3">
@@ -124,7 +125,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-12 portfolio-card">
+        <div class="col-lg-4 col-sm-12 wow fadeInRight">
           <div class="card">
             <div class="image-container">
               <img src="images/port_4.jpg" alt="portfolio 4">
@@ -134,7 +135,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-12 portfolio-card">
+        <div class="col-lg-4 col-sm-12 wow fadeInUp">
           <div class="card">
             <div class="image-container">
               <img src="images/port_5.jpg" alt="portfolio 5">
@@ -144,7 +145,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-sm-12 portfolio-card">
+        <div class="col-lg-4 col-sm-12 wow fadeInLeft">
           <div class="card">
             <div class="image-container">
               <img src="images/port_6.jpg" alt="portfolio 6">
@@ -168,13 +169,13 @@
       <div class="timeline">
         <!-- pierwszy -->
         <div class="row">
-          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-card">
+          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-card wow fadeInLeft">
             <h3 class="timeline-date">July 2010</h3>
             <p class="timeline-headings">Our Humble Beginings</p>
             <p class="timeline-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati quasi repellat eum natus animi molestias
               pariatur quia impedit maxime enim, blanditiis eligendi corporis aspernatur illo commodi omnis alias! Necessitatibus!</p>
           </div>
-          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-picture">
+          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-picture wow fadeInRight">
             <div class="image-container">
               <img src="images/timeline-1.jpeg" alt="" class="timeline-photo">
             </div>
@@ -182,12 +183,12 @@
         </div>
         <!-- drugi -->
         <div class="row">
-          <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-xs-12 timeline-picture">
+          <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-xs-12 timeline-picture wow fadeInLeft">
             <div class="image-container">
               <img src="images/timeline-2.jpeg" alt="" class="timeline-photo">
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-card">
+          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-card wow fadeInRight">
             <h3 class="timeline-date">January 2011</h3>
             <p class="timeline-headings">Facing Staqrtup Battles</p>
             <p class="timeline-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati quasi repellat eum natus animi molestias
@@ -196,13 +197,13 @@
         </div>
         <!-- trzeci -->
         <div class="row">
-          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-card">
+          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-card wow fadeInLeft">
             <h3 class="timeline-date">December 2012</h3>
             <p class="timeline-headings">Enter The Dark Days</p>
             <p class="timeline-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati quasi repellat eum natus animi molestias
               pariatur quia impedit maxime enim, blanditiis eligendi corporis aspernatur illo commodi omnis alias! Necessitatibus!</p>
           </div>
-          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-picture">
+          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-picture wow fadeInRight">
             <div class="image-container">
               <img src="images/timeline-3.jpeg" alt="" class="timeline-photo">
             </div>
@@ -210,12 +211,12 @@
         </div>
         <!-- czwarty -->
         <div class="row">
-          <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-xs-12 timeline-picture">
+          <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-xs-12 timeline-picture wow fadeInLeft">
             <div class="image-container">
               <img src="images/timeline-4.jpeg" alt="" class="timeline-photo">
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-card">
+          <div class="col-lg-4 col-sm-6 col-xs-12 timeline-card wow fadeInRight">
             <h3 class="timeline-date">February 2014</h3>
             <p class="timeline-headings">Our Triumph</p>
             <p class="timeline-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati quasi repellat eum natus animi molestias
@@ -224,7 +225,7 @@
         </div>
         <!-- całość -->
         <div class="row">
-          <div class="col-lg-4 col-lg-offset-4 col-sm-12  timeline-picture">
+          <div class="col-lg-4 col-lg-offset-4 col-sm-12  timeline-picture wow fadeInUp">
             <div class="timeline-picture current">
               <span>our</span>
               <span>story</span>
@@ -246,7 +247,7 @@
 
         <div class="col-lg-4 col-sm-12">
           <div class="card">
-            <div class="image-container">
+            <div class="image-container wow zoomIn">
               <img src="images/worker-1.jpeg" alt="">
             </div>
             <h3 class="member-name">Kimberly Thompson</h3>
@@ -267,7 +268,7 @@
 
         <div class="col-lg-4 col-sm-12">
           <div class="card">
-            <div class="image-container">
+            <div class="image-container wow zoomIn">
               <img src="images/worker-2.jpeg" alt="">
             </div>
             <h3 class="member-name">Rico Massimo</h3>
@@ -288,7 +289,7 @@
 
         <div class="col-lg-4 col-sm-12">
           <div class="card">
-            <div class="image-container">
+            <div class="image-container wow zoomIn">
               <img src="images/worker-3.jpeg" alt="">
             </div>
             <h3 class="member-name">Uku Mason</h3>
@@ -315,7 +316,7 @@
 
   <section class="logos">
     <div class="container">
-      <div class="logos-container">
+      <div class="logos-container wow fadeInLeftBig">
         <img src="images/logo-1.jpg" alt="">
         <img src="images/logo-2.png" alt="">
         <img src="images/logo-3.jpg" alt="">
@@ -330,7 +331,7 @@
       <p class="section-description">Lorem ipsum dolor sit amet consectetur.</p>
 
       <div class="row">
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-lg-6 col-sm-12 wow fadeInLeft">
           <form action="#">
 
             <label for="#input-name"></label>
@@ -344,7 +345,7 @@
 
           </form>
         </div>
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-lg-6 col-sm-12 wow fadeInRight">
           <form action="#">
             <textarea name="message" id="input-message" placeholder="YOUR MESSAGE *" cols="30" rows="15"></textarea>
           </form>
@@ -352,7 +353,7 @@
       </div>
       <!--row-->
       <div class="btn-container">
-        <button class="btn btn-primary" type="submit">send message</button>
+        <button class="btn btn-primary wow pulse" data-wow-delay="1.2s" type="submit">send message</button>
       </div>
     </div>
     <!--container-->
@@ -367,22 +368,40 @@
         </div>
         <div class="col-lg-4 col-sm-12">
           <div class="socials-container">
-            <a href="#"><span class="fab fa-twitter"></span></a>
-            <a href="#"><span class="fab fa-facebook-f"></span></a>
-            <a href="#"><span class="fab fa-pinterest-p"></span></a>
-            <a href="#"><span class="fab fa-google-plus-g"></span></a>
+            <a href="#">
+              <span class="fab fa-twitter"></span>
+            </a>
+            <a href="#">
+              <span class="fab fa-facebook-f"></span>
+            </a>
+            <a href="#">
+              <span class="fab fa-pinterest-p"></span>
+            </a>
+            <a href="#">
+              <span class="fab fa-google-plus-g"></span>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  
+
   <script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script src="vendor/in-viev.min.js"></script>
-  <script src="vendor/jquery.inview.min.js"></script>
+  <script src="vendor/jquery.visible.min.js"></script>
+  <script src="vendor/wow/wow.js"></script>
+  <script>
+    wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: false,
+      live: true
+    })
+    wow.init();
+  </script>
   <script src="js/script.js"></script>
 </body>
 
