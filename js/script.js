@@ -2,9 +2,12 @@
 var $nav = $('.nav');
 var $menu = $('.main-nav');
 var $hamburger = $('.hamburger');
+var $menuItems = $('.main-nav li');
 
 $hamburger.on('click', function(){
-  $menu.toggleClass('isActive fadeInDown');
+  $hamburger.toggleClass('close');
+  $menu.toggleClass('rolledDown');
+  $menuItems.toggleClass('isActive');
 });
 
 // wykryć kiedy navbar jest na ilustam pikselach tak by dodawly mu sie style na background i box-shadow

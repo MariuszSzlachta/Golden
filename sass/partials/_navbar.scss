@@ -1,15 +1,14 @@
 .nav {
   padding: 2rem 0;
   background-color: transparent;
-  position: fixed;
-  // top: -120px;
+  position: fixed; // top: -120px;
   left: 0;
   right: 0;
   z-index: 20;
   transition: background-color 0.7s linear, box-shadow 0.3s linear;
   &.dark {
     background-color: #222;
-    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -50,57 +49,120 @@
     transform: scale(1.2);
   }
 }
+
 .hamburger {
   display: none;
 }
-@media (max-width: 991px){
+
+@media (max-width: 991px) {
   .navbar-container {
     padding: 0 12px;
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .nav {
     background-color: $gray; // na klase is active na main-nav
     position: fixed;
-    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.3);
   }
-
   .navbar-container {
     flex-direction: column;
     justify-content: center;
     position: relative;
   }
-
-  .main-nav {    
+  .main-nav {
     display: none;
     margin-top: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: roll-menu 1.2s ease-in-out alternate both;
     li {
-      font-size: 3rem;
-      &:not(:last-child){
+      display: none;
+      font-size: 3rem; // animations
+      opacity: 0;
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          animation-name: show-menu-items;
+          animation-duration: 300ms;
+          animation-delay: 300ms + (200ms*$i);
+          animation-timing-function: ease-in-out;
+          animation-direction: normal;
+          animation-fill-mode: forwards;
+        }
+      }
+      &:not(:last-child) {
         margin: 0;
         margin-bottom: 0.6rem;
       }
+      &.isActive {
+        display: flex; // animation-name: menu-rolldown;
+      }
     }
-    &.isActive {
+    &.rolledDown {
       display: flex;
     }
   }
+}
 
-  .hamburger {
-    display: inline-block;
-    position: fixed;
-    top: 10px;
-    right: 20px;
-    font-size: 4rem;
-    background-color: transparent;
-    outline: 0;
-    border: none;
-    border-radius: 4px;
-    padding: 5px;
-    color: $white;
-  }  
+.hamburger {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40px;
+  height: 35px;
+  top: 15px;
+  right: 20px;
+  font-size: 4rem;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  border-radius: 4px;
+  padding: 0;
+  color: $white;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+  .bar {
+    display: block;
+    width: 35px;
+    height: 5px;
+    border-radius: 1px;
+    background-color: $cremeWhite;
+    transition: all 0.3s ease-in-out;
+  }
+  &.close .bar:nth-child(1) {
+    transform: translateY(14px) rotate(45deg);
+  }
+  &.close .bar:nth-child(2) {
+    transform: translateX(9999px);
+  }
+  &.close .bar:nth-child(3) {
+    transform: translateY(-17px) rotate(-45deg);    
+  }
+}
+
+@keyframes show-menu-items {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes roll-menu {
+  0% {
+    max-height: 0px;
+  }
+  100% {
+    max-height: 1000px;
+  }
 }
