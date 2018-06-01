@@ -72,15 +72,17 @@
     position: relative;
   }
   .main-nav {
-    display: none;
+    // display: none;
     margin-top: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: roll-menu 1.2s ease-in-out alternate both;
+    // animation: roll-menu 1.2s ease-in-out alternate both;
+    transition: all 1s ease;
     li {
+      text-align: center;
       display: none;
-      font-size: 3rem; // animations
+      font-size: 3rem;
       opacity: 0;
       @for $i from 1 through 5 {
         &:nth-child(#{$i}) {
@@ -97,11 +99,26 @@
         margin-bottom: 0.6rem;
       }
       &.isActive {
-        display: flex; // animation-name: menu-rolldown;
+        display: block;
       }
+    }
+    // &.open{
+    //   max-height: 1000px;
+    //   display: flex;
+    //   transition: max-height 2s ease-in-out;
+    // }
+    // &.closed{
+    //   transition: max-height 2s ease-in-out;
+    //   max-height: 0;
+    //   display: none;
+    // }
+    &.rolledUp{
+      display: none;
+      max-height: 0px;
     }
     &.rolledDown {
       display: flex;
+      max-height: 1000px;
     }
   }
   .hamburger {
@@ -165,3 +182,11 @@
     max-height: 1000px;
   }
 }
+// @keyframes roll-menu-up {
+//   0% {
+//     max-height: 1000px;
+//   }
+//   100% {
+//     max-height: 0;
+//   }
+// }

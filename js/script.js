@@ -6,9 +6,12 @@ var $menuItems = $('.main-nav li');
 
 $hamburger.on('click', function(){
   $hamburger.toggleClass('close');
-  $menu.toggleClass('rolledDown');
   $menuItems.toggleClass('isActive');
+  $menu.toggleClass('rolledDown');
 });
+
+
+
 
 // wykryć kiedy navbar jest na ilustam pikselach tak by dodawly mu sie style na background i box-shadow
 function toggleNavStyles(){
