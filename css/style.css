@@ -66,7 +66,7 @@ section {
 
 @media (max-width: 768px) {
   section {
-    padding: 30px 0;
+    padding: 30px 12px;
   }
   .image-container, .current {
     width: 200px;
@@ -666,15 +666,8 @@ section {
     height: 200px;
   }
   .hamburger {
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     position: fixed;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-align: center;
-        align-items: center;
     width: 40px;
     height: 35px;
     top: 15px;
@@ -692,22 +685,32 @@ section {
   .hamburger:hover {
     transform: scale(1.2);
   }
+  .hamburger .ff-fallback {
+    width: 100%;
+    height: 35px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
   .hamburger .bar {
     display: block;
-    width: 35px;
+    width: 40px;
     height: 5px;
     border-radius: 1px;
     background-color: #f7f7f7;
     transition: all 0.3s ease-in-out;
   }
   .hamburger.close .bar:nth-child(1) {
-    transform: translateY(14px) rotate(45deg);
+    transform: translateY(15px) rotate(45deg);
   }
   .hamburger.close .bar:nth-child(2) {
     transform: translateX(9999px);
   }
   .hamburger.close .bar:nth-child(3) {
-    transform: translateY(-17px) rotate(-45deg);
+    transform: translateY(-15px) rotate(-45deg);
   }
 }
 
@@ -1150,6 +1153,8 @@ section {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
   height: 44px;
 }
 
@@ -1163,11 +1168,9 @@ section {
         flex-direction: column;
     -ms-flex-pack: center;
         justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
   }
   .logos-container img {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
 

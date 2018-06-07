@@ -4,6 +4,7 @@
 .logos-container {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 44px;
 }
 
@@ -15,9 +16,8 @@
     height: auto;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     img {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
     
   }
