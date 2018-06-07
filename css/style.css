@@ -593,6 +593,9 @@ section {
     position: relative;
   }
   .main-nav {
+    display: -ms-flexbox;
+    display: flex;
+    height: 0px;
     margin-top: 1rem;
     -ms-flex-direction: column;
         flex-direction: column;
@@ -660,9 +663,7 @@ section {
     max-height: 0px;
   }
   .main-nav.rolledDown {
-    display: -ms-flexbox;
-    display: flex;
-    max-height: 1000px;
+    height: 200px;
   }
   .hamburger {
     display: -ms-flexbox;
@@ -718,15 +719,6 @@ section {
   100% {
     opacity: 1;
     transform: rotateX(0deg);
-  }
-}
-
-@keyframes roll-menu {
-  0% {
-    max-height: 0px;
-  }
-  100% {
-    max-height: 1000px;
   }
 }
 
@@ -1105,6 +1097,7 @@ section {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  list-style: none;
 }
 
 .socials-container a {
@@ -1234,6 +1227,9 @@ section {
 .footer .socials-container {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer span.fab {

@@ -11,9 +11,6 @@ $hamburger.on('click', function(){
 });
 
 
-
-
-// wykryć kiedy navbar jest na ilustam pikselach tak by dodawly mu sie style na background i box-shadow
 function toggleNavStyles(){
   if (pageYOffset >= 630){
     $nav.addClass('dark');
@@ -21,7 +18,7 @@ function toggleNavStyles(){
     $nav.removeClass('dark');
   }
 }
-document.addEventListener('scroll', toggleNavStyles); // nie wiem czy to dobra praktyka
+document.addEventListener('scroll', toggleNavStyles); 
 
 // smooth scrool
 $('a[href*="#"]')
