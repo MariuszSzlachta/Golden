@@ -1,4 +1,4 @@
-https://mariuszszlachta.github.io/project-1/
+https://mariuszszlachta.github.io/Golden/
 
 # Golden
 
