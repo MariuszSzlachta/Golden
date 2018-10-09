@@ -3,7 +3,7 @@ https://mariuszszlachta.github.io/Golden/
 # Golden
 
 ## What's this?
-This is landing page coded from *.psd file.
+This is landing page coded from *.psd file. I've created this project in one of my first attempts during Kodilla's bootcamp. 
 
 ## Technologies
 
