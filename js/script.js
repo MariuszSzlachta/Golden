@@ -13,9 +13,9 @@ $hamburger.on('click', function(){
 
 function toggleNavStyles(){
   if (pageYOffset >= 630){
-    $nav.addClass('dark');
+    $nav.addClass('nav--dark');
   } else {
-    $nav.removeClass('dark');
+    $nav.removeClass('nav--dark');
   }
 }
 document.addEventListener('scroll', toggleNavStyles); 
